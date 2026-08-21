@@ -123,14 +123,41 @@ python main.py --variant "rs80357906" --output json
 
 ## Architecture
 
+```mermaid
+flowchart TD
+    H["main.py (CLI)"] --> B
+    I["app.py (Streamlit dashboard)"] --> B
+    J["recheck.py (VUS re-review loop)"] --> B
+
+    B["variant.py — parse & normalize<br/>HGVS / rsID / VCF / CNV"] --> C1["SNV / Indel path"]
+    B --> C2["CNV path"]
+
+    C1 --> D1["apis.py<br/>Ensembl VEP + gnomAD + ClinVar (live)"]
+    C2 --> D2["cnv.py<br/>ClinGen dosage-sensitivity scoring"]
+
+    D1 --> E["acmg.py<br/>ACMG/AMP rule engine (deterministic)"]
+    D2 --> E
+
+    E --> F1["Rule-based summary (no LLM)"]
+    E --> F2["llm.py — optional (--llm)<br/>+ uploaded literature + Claude/Ollama synthesis"]
+
+    F1 --> G["Classification Report<br/>Benign → Pathogenic"]
+    F2 --> G
+```
+
+**Module reference**
+
 ```
 main.py                  ← CLI entry point (rich terminal output)
+app.py                   ← Streamlit web dashboard
+recheck.py               ← VUS re-review loop (deterministic half)
 src/
   variant.py             ← Input parsing (HGVS / VCF / rsID / CNV)
-  apis.py                ← Ensembl VEP, gnomAD, ClinVar clients
+  apis.py                ← Ensembl VEP, gnomAD, ClinVar clients (SNV/indel path)
+  cnv.py                 ← ClinGen dosage-sensitivity scoring (CNV path)
   acmg.py                ← ACMG/AMP criteria engine
   classifier.py          ← Orchestration pipeline
-  llm.py                 ← Claude synthesis layer
+  llm.py                 ← Claude / Ollama synthesis layer (optional)
 ```
 
 ---
