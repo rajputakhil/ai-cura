@@ -1,0 +1,38 @@
+<svg width="240" height="72" viewBox="0 0 240 72" xmlns="http://www.w3.org/2000/svg">
+  <!-- Database cylinder -->
+  <g transform="translate(2,2)">
+    <path d="M 0,7 A 16,6 0 1 1 32,7 A 16,6 0 1 1 0,7 Z" fill="#4A6670"/>
+    <path d="M 0,7 L 0,21 A 16,6 0 0 0 32,21 L 32,7" fill="#4A6670"/>
+    <path d="M 0,14 A 16,6 0 0 0 32,14" fill="none" stroke="#EFF2F2" stroke-width="1.2" opacity="0.6"/>
+    <path d="M 0,21 A 16,6 0 0 0 32,21" fill="none" stroke="#2E4046" stroke-width="1.2"/>
+  </g>
+  <!-- LLM / model: small triangulated network node icon -->
+  <g transform="translate(2,27)">
+    <rect x="0" y="0" width="32" height="32" rx="7" fill="#9C7A4A"/>
+    <circle cx="16" cy="9" r="3.4" fill="#F2F3F4"/>
+    <circle cx="8" cy="23" r="3.4" fill="#F2F3F4"/>
+    <circle cx="24" cy="23" r="3.4" fill="#F2F3F4"/>
+    <line x1="16" y1="9" x2="8" y2="23" stroke="#F2F3F4" stroke-width="1.6"/>
+    <line x1="16" y1="9" x2="24" y2="23" stroke="#F2F3F4" stroke-width="1.6"/>
+    <line x1="8" y1="23" x2="24" y2="23" stroke="#F2F3F4" stroke-width="1.6"/>
+  </g>
+  <!-- RAG: document + magnifier -->
+  <g transform="translate(0,58)">
+    <rect x="4" y="0" width="22" height="26" rx="2.5" fill="#8FA3AA"/>
+    <line x1="8.5" y1="6.5" x2="21.5" y2="6.5" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="8.5" y1="11.5" x2="21.5" y2="11.5" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="8.5" y1="16.5" x2="16" y2="16.5" stroke="#FFFFFF" stroke-width="1.6"/>
+    <circle cx="23" cy="20" r="7" fill="#F2F3F4" stroke="#5F7178" stroke-width="2.2"/>
+    <circle cx="23" cy="20" r="3.8" fill="none" stroke="#5F7178" stroke-width="1.5"/>
+    <line x1="28" y1="25" x2="34" y2="31" stroke="#5F7178" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Converging connector lines to a single hub -->
+  <path d="M 38,16 C 66,16 66,36 92,36" fill="none" stroke="#9AA6AA" stroke-width="1.8"/>
+  <path d="M 38,43 C 66,43 66,36 92,36" fill="none" stroke="#9AA6AA" stroke-width="1.8"/>
+  <path d="M 40,71 C 66,71 66,36 92,36" fill="none" stroke="#9AA6AA" stroke-width="1.8"/>
+  <!-- Hub -->
+  <circle cx="98" cy="36" r="8" fill="#20262A"/>
+  <!-- Arrow to title -->
+  <line x1="108" y1="36" x2="128" y2="36" stroke="#20262A" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 121,29 L 130,36 L 121,43" fill="none" stroke="#20262A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
