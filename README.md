@@ -18,6 +18,58 @@ Given a variant (SNV, indel, or CNV), AI-CURA:
 
 ---
 
+## Architecture
+
+A variant enters through one of three surfaces — the CLI, the Streamlit dashboard, or the scheduled VUS re-review loop — and is parsed and normalized first. It then splits by variant type: SNVs/indels are annotated live against Ensembl VEP, gnomAD, and ClinVar, while CNVs go through a separate ClinGen dosage-scoring path. Both paths converge on one deterministic ACMG/AMP rule engine — the same inputs always produce the same rule outcome, with no LLM involved. From there, the default output is a rule-based summary; passing `--llm` additionally folds in any uploaded literature and has Claude or a local Ollama model synthesize a plain-English explanation of the evidence that's already been scored — the LLM only narrates, it never re-scores. Both paths converge on one final classification, from Benign to Pathogenic.
+
+```mermaid
+flowchart TD
+    H["main.py (CLI)"]:::entry --> B
+    I["app.py (Streamlit dashboard)"]:::entry --> B
+    J["recheck.py (VUS re-review loop)"]:::entry --> B
+
+    B["variant.py — parse & normalize<br/>HGVS / rsID / VCF / CNV"]:::neutral --> C1["SNV / Indel path"]:::snv
+    B --> C2["CNV path"]:::cnv
+
+    C1 --> D1["apis.py<br/>Ensembl VEP + gnomAD + ClinVar (live)"]:::snv
+    C2 --> D2["cnv.py<br/>ClinGen dosage-sensitivity scoring"]:::cnv
+
+    D1 --> E["acmg.py<br/>ACMG/AMP rule engine (deterministic)"]:::engine
+    D2 --> E
+
+    E --> F1["Rule-based summary (no LLM)"]:::rule
+    E --> F2["llm.py — optional (--llm)<br/>+ uploaded literature + Claude/Ollama synthesis"]:::llm
+
+    F1 --> G["Classification Report<br/>Benign → Pathogenic"]:::output
+    F2 --> G
+
+    classDef entry fill:#F2F3F4,stroke:#8FA3AA,stroke-width:1.5px,color:#20262A;
+    classDef neutral fill:#6B7478,stroke:#6B7478,color:#FFFFFF;
+    classDef snv fill:#4A6670,stroke:#4A6670,color:#FFFFFF;
+    classDef cnv fill:#8FA3AA,stroke:#8FA3AA,color:#20262A;
+    classDef engine fill:#9C7A4A,stroke:#9C7A4A,color:#FFFFFF;
+    classDef rule fill:#33454C,stroke:#8FA3AA,stroke-width:1.5px,color:#FFFFFF;
+    classDef llm fill:#4A6670,stroke:#9C7A4A,stroke-width:2px,color:#FFFFFF;
+    classDef output fill:#20262A,stroke:#20262A,color:#FFFFFF;
+```
+
+**Module reference**
+
+```
+main.py                  ← CLI entry point (rich terminal output)
+app.py                   ← Streamlit web dashboard
+recheck.py               ← VUS re-review loop (deterministic half)
+src/
+  variant.py             ← Input parsing (HGVS / VCF / rsID / CNV)
+  apis.py                ← Ensembl VEP, gnomAD, ClinVar clients (SNV/indel path)
+  cnv.py                 ← ClinGen dosage-sensitivity scoring (CNV path)
+  acmg.py                ← ACMG/AMP criteria engine
+  classifier.py          ← Orchestration pipeline
+  llm.py                 ← Claude / Ollama synthesis layer (optional)
+```
+
+---
+
 ## ACMG Criteria Implemented
 
 | Code | Strength | Direction | Rule |
@@ -118,58 +170,6 @@ python main.py --variant "rs80357906" --output json
 - LLM synthesis (**--llm**) requires an Anthropic API key and uses `claude-haiku` for speed
 - No local database; all data is fetched live from public APIs (requires internet)
 - HGVS parsing is best-effort; complex variants may need normalization first
-
----
-
-## Architecture
-
-A variant enters through one of three surfaces — the CLI, the Streamlit dashboard, or the scheduled VUS re-review loop — and is parsed and normalized first. It then splits by variant type: SNVs/indels are annotated live against Ensembl VEP, gnomAD, and ClinVar, while CNVs go through a separate ClinGen dosage-scoring path. Both paths converge on one deterministic ACMG/AMP rule engine — the same inputs always produce the same rule outcome, with no LLM involved. From there, the default output is a rule-based summary; passing `--llm` additionally folds in any uploaded literature and has Claude or a local Ollama model synthesize a plain-English explanation of the evidence that's already been scored — the LLM only narrates, it never re-scores. Both paths converge on one final classification, from Benign to Pathogenic.
-
-```mermaid
-flowchart TD
-    H["main.py (CLI)"]:::entry --> B
-    I["app.py (Streamlit dashboard)"]:::entry --> B
-    J["recheck.py (VUS re-review loop)"]:::entry --> B
-
-    B["variant.py — parse & normalize<br/>HGVS / rsID / VCF / CNV"]:::neutral --> C1["SNV / Indel path"]:::snv
-    B --> C2["CNV path"]:::cnv
-
-    C1 --> D1["apis.py<br/>Ensembl VEP + gnomAD + ClinVar (live)"]:::snv
-    C2 --> D2["cnv.py<br/>ClinGen dosage-sensitivity scoring"]:::cnv
-
-    D1 --> E["acmg.py<br/>ACMG/AMP rule engine (deterministic)"]:::engine
-    D2 --> E
-
-    E --> F1["Rule-based summary (no LLM)"]:::rule
-    E --> F2["llm.py — optional (--llm)<br/>+ uploaded literature + Claude/Ollama synthesis"]:::llm
-
-    F1 --> G["Classification Report<br/>Benign → Pathogenic"]:::output
-    F2 --> G
-
-    classDef entry fill:#F2F3F4,stroke:#8FA3AA,stroke-width:1.5px,color:#20262A;
-    classDef neutral fill:#6B7478,stroke:#6B7478,color:#FFFFFF;
-    classDef snv fill:#4A6670,stroke:#4A6670,color:#FFFFFF;
-    classDef cnv fill:#8FA3AA,stroke:#8FA3AA,color:#20262A;
-    classDef engine fill:#9C7A4A,stroke:#9C7A4A,color:#FFFFFF;
-    classDef rule fill:#33454C,stroke:#8FA3AA,stroke-width:1.5px,color:#FFFFFF;
-    classDef llm fill:#4A6670,stroke:#9C7A4A,stroke-width:2px,color:#FFFFFF;
-    classDef output fill:#20262A,stroke:#20262A,color:#FFFFFF;
-```
-
-**Module reference**
-
-```
-main.py                  ← CLI entry point (rich terminal output)
-app.py                   ← Streamlit web dashboard
-recheck.py               ← VUS re-review loop (deterministic half)
-src/
-  variant.py             ← Input parsing (HGVS / VCF / rsID / CNV)
-  apis.py                ← Ensembl VEP, gnomAD, ClinVar clients (SNV/indel path)
-  cnv.py                 ← ClinGen dosage-sensitivity scoring (CNV path)
-  acmg.py                ← ACMG/AMP criteria engine
-  classifier.py          ← Orchestration pipeline
-  llm.py                 ← Claude / Ollama synthesis layer (optional)
-```
 
 ---
 
