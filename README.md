@@ -123,6 +123,8 @@ python main.py --variant "rs80357906" --output json
 
 ## Architecture
 
+A variant enters through one of three surfaces — the CLI, the Streamlit dashboard, or the scheduled VUS re-review loop — and is parsed and normalized first. It then splits by variant type: SNVs/indels are annotated live against Ensembl VEP, gnomAD, and ClinVar, while CNVs go through a separate ClinGen dosage-scoring path. Both paths converge on one deterministic ACMG/AMP rule engine — the same inputs always produce the same rule outcome, with no LLM involved. From there, the default output is a rule-based summary; passing `--llm` additionally folds in any uploaded literature and has Claude or a local Ollama model synthesize a plain-English explanation of the evidence that's already been scored — the LLM only narrates, it never re-scores. Both paths converge on one final classification, from Benign to Pathogenic.
+
 ```mermaid
 flowchart TD
     H["main.py (CLI)"]:::entry --> B
