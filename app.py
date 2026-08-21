@@ -54,7 +54,8 @@ with st.sidebar:
     _pipeline_mark_path = Path(__file__).parent / "assets" / "pipeline_mark.svg"
     if _pipeline_mark_path.exists():
         st.markdown(
-            f"<div style='width:170px;'>{_pipeline_mark_path.read_text()}</div>",
+            f"<div style='width:100%; display:flex; justify-content:center;'>"
+            f"<div style='width:170px;'>{_pipeline_mark_path.read_text()}</div></div>",
             unsafe_allow_html=True,
         )
     else:
