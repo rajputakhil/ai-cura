@@ -51,10 +51,10 @@ EXAMPLE_VARIANTS = {
 # Sidebar
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    _dna_icon_path = Path(__file__).parent / "assets" / "dna_icon.svg"
-    if _dna_icon_path.exists():
+    _pipeline_mark_path = Path(__file__).parent / "assets" / "pipeline_mark.svg"
+    if _pipeline_mark_path.exists():
         st.markdown(
-            f"<div style='width:64px;'>{_dna_icon_path.read_text()}</div>",
+            f"<div style='width:170px;'>{_pipeline_mark_path.read_text()}</div>",
             unsafe_allow_html=True,
         )
     else:
@@ -120,17 +120,7 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Main panel
 # ---------------------------------------------------------------------------
-_pipeline_mark_path = Path(__file__).parent / "assets" / "pipeline_mark.svg"
-if _pipeline_mark_path.exists():
-    st.markdown(
-        f"""<div style='display:flex; align-items:center; gap:14px; margin-bottom:0.2rem;'>
-        <div style='width:190px; flex-shrink:0;'>{_pipeline_mark_path.read_text()}</div>
-        <span style='font-size:2.25rem; font-weight:700; line-height:1.1;'>AI-CURA Variant Classifier</span>
-        </div>""",
-        unsafe_allow_html=True,
-    )
-else:
-    st.title("AI-CURA Variant Classifier")
+st.title("AI-CURA Variant Classifier")
 st.markdown(
     "Enter a variant below to classify it using **ACMG/AMP guidelines** "
     "with evidence from gnomAD, ClinVar, and Ensembl VEP."
