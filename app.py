@@ -51,7 +51,14 @@ EXAMPLE_VARIANTS = {
 # Sidebar
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("<div style='font-size:44px; line-height:1;'>🧬</div>", unsafe_allow_html=True)
+    _dna_icon_path = Path(__file__).parent / "assets" / "dna_icon.svg"
+    if _dna_icon_path.exists():
+        st.markdown(
+            f"<div style='width:64px;'>{_dna_icon_path.read_text()}</div>",
+            unsafe_allow_html=True,
+        )
+    else:
+        st.markdown("<div style='font-size:44px; line-height:1;'>🧬</div>", unsafe_allow_html=True)
     st.title("AI-CURA")
     st.caption("Automated LLM workflow for genetic variant classification")
     st.divider()
