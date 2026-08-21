@@ -1,0 +1,41 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT — for demoing AI-CURA literature scoring only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+
+Title: A recurrent MYBPC3 missense variant in familial hypertrophic cardiomyopathy:
+functional and segregation evidence
+Authors: R. Fictional, S. Example, T. Placeholder (Institute of Demonstration Cardiology)
+Recruitment: 41 unrelated probands with hypertrophic cardiomyopathy (HCM) were prospectively
+recruited at a single tertiary center between January 2018 and December 2022. All probands met
+established HCM diagnostic criteria (maximal LV wall thickness >= 15 mm unexplained by loading
+conditions). Whole-exome sequencing was performed on all probands.
+
+Target variant: NM_000256.3:c.1504C>T (p.Arg502Trp)
+
+CASE ENRICHMENT
+The variant was identified in 6 unrelated probands in our HCM cohort (6/41). It was absent from
+2,504 in-house control exomes from individuals without cardiac disease. Each of the 6 carriers was
+an independent proband; only the proband was counted per family. The enrichment of this variant in
+cases versus controls was statistically significant (p < 0.001).
+
+SEGREGATION
+In the three largest families, the variant was tracked by Sanger sequencing. Across these families
+the variant cosegregated with clinically confirmed HCM in 7 affected relatives who were genetically
+confirmed to carry the variant, in addition to the probands. Two obligate carriers were also
+documented. No affected family member lacked the variant, and no genetically confirmed carrier over
+age 50 was unaffected.
+
+FUNCTIONAL STUDIES
+We expressed wild-type and p.Arg502Trp cardiac myosin-binding protein C in a neonatal rat
+cardiomyocyte model. Compared with the wild-type control and a well-characterized null (truncating)
+construct as the abnormal control, the p.Arg502Trp protein showed markedly reduced sarcomere
+incorporation and accelerated proteasomal degradation, consistent with a loss-of-function effect.
+Both normal (wild-type) and abnormal (null) controls were included in every experiment. These
+functional assays were performed by the study authors.
+
+PHENOTYPE
+All six carriers displayed the characteristic HCM phenotype (asymmetric septal hypertrophy, myocyte
+disarray on available histology). HCM in the setting of an MYBPC3 variant is highly specific to
+sarcomeric cardiomyopathy, and the genetic workup (WES) excluded other sarcomeric-gene variants in
+all carriers.
+
+No RNA-based splicing study was performed for this variant.

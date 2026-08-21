@@ -1,0 +1,1202 @@
+[
+  {
+    "gene": "ACADVL",
+    "variant": "NM_000018.4(ACADVL):c.1605+6T>C",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BA1",
+    "human_classification": "Benign",
+    "deepseek_classification": "Benign"
+  },
+  {
+    "gene": "ACADVL",
+    "variant": "NM_000018.4(ACADVL):c.663C>T (p.Ser221=)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BS1, BP4, BP7",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "ACADVL",
+    "variant": "NM_000018.4(ACADVL):c.1804_1805CT[1] (p.Leu602_Cys603insTer)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ACADVL",
+    "variant": "NM_000018.4(ACADVL):c.1183-7A>G",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ACTA1",
+    "variant": "NM_001100.4(ACTA1):c.1043T>A (p.Leu348Gln)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PP2, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "ACTA1",
+    "variant": "NM_001100.4(ACTA1):c.124C>T (p.His42Tyr)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP2, PP3, PM2_Supporting",
+    "human_classification": "Likley pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ADA",
+    "variant": "NM_000022.4(ADA):c.890C>T (p.Pro297Leu)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "ADA",
+    "variant": "NM_000022.4(ADA):c.646G>A (p.Gly216Arg)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "ANO5",
+    "variant": "NM_213599.3(ANO5):c.2272C>T (p.Arg758Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "BMPR2",
+    "variant": "NM_001204.7(BMPR2):c.2618G>A (p.Arg873Gln)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "BMPR2",
+    "variant": "NM_001204.7(BMPR2):c.1509A>C (p.Glu503Asp)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "BMPR2",
+    "variant": "NM_001204.7(BMPR2):c.1040G>A (p.Cys347Tyr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM5, PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "BMPR2",
+    "variant": "NM_001204.7(BMPR2):c.1472G>A (p.Arg491Gln)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "BMPR2",
+    "variant": "NM_001204.7(BMPR2):c.1151C>T (p.Ala384Val)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "BRAF",
+    "variant": "NM_004333.6(BRAF):c.1455G>C (p.Leu485Phe)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP2, PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "CAPN3",
+    "variant": "NM_000070.3(CAPN3):c.1319G>A (p.Arg440Gln)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "CDH1",
+    "variant": "NM_004360.5(CDH1):c.1409C>T (p.Thr470Ile)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "CDH1",
+    "variant": "NM_004360.4(CDH1):c.2131C>G (p.Leu711Val)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PM2_Supporting, BP4_Moderate",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "CDH1",
+    "variant": "NM_004360.5(CDH1):c.1320+1G>C",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1_Strong, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "CDH1",
+    "variant": "NM_004360.4(CDH1):c.49-2A>G",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "CDH1",
+    "variant": "NM_004360.5(CDH1):c.1711+5G>A",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "CDKL5",
+    "variant": "NM_003159.2(CDKL5):c.578A>G (p.Asp193Gly)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "CDKL5",
+    "variant": "NM_003159.2(CDKL5):c.215T>C (p.Ile72Thr)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM5_Strong, PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "DICER1",
+    "variant": "NM_177438.2(DICER1):c.2614G>A (p.Ala872Thr)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BS1, PP2",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "DICER1",
+    "variant": "NM_177438.2(DICER1):c.2651-4T>G",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BP4, BP7",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "DICER1",
+    "variant": "NM_030621.4(DICER1):c.5441C>T (p.Ser1814Leu)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "DICER1",
+    "variant": "NM_177438.3(DICER1):c.2236A>G (p.Arg746Gly)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "F8",
+    "variant": "NM_000132.4(F8):c.2138A>T (p.Asn713Ile)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "F8",
+    "variant": "NM_000132.4(F8):c.144-26A>C",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "FBN1",
+    "variant": "NM_000138.5(FBN1):c.3422C>T (p.Pro1141Leu)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BS1, PP3, PP2",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "FBN1",
+    "variant": "NM_000138.5(FBN1):c.3689T>C (p.Met1230Thr)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PM2_Supporting, PP2",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "FBN1",
+    "variant": "NM_000138.5(FBN1):c.1147G>A (p.Glu383Lys)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP2, PP3, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "FBN1",
+    "variant": "NM_000138.5(FBN1):c.188A>G (p.Tyr63Cys)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "NA",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "FOXG1",
+    "variant": "NM_005249.5(FOXG1):c.670G>A (p.Gly224Ser)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "FOXG1",
+    "variant": "NM_005249.4(FOXG1):c.256delC (p.Gln86Argfs)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "FOXN1",
+    "variant": "NM_001369369.1(FOXN1):c.1585del (p.Leu529fs)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1_Strong, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "FOXN1",
+    "variant": "NM_001369369.1(FOXN1):c.880G>A (p.Val294Ile)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM5, PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GAMT",
+    "variant": "NM_000156.6(GAMT):c.274A>G (p.Asn92Asp)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GAMT",
+    "variant": "NM_000156.6(GAMT):c.407C>T (p.Thr136Met)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GATM",
+    "variant": "NM_001482.3(GATM):c.553G>C (p.Ala185Pro)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GATM",
+    "variant": "NM_001482.3(GATM):c.484+1G>T",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GATM",
+    "variant": "NM_001482.3(GATM):c.985C>G (p.Leu329Val)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting, BP4_Strong",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "F9",
+    "variant": "NM_000133.4(F9):c.1303T>A (p.Cys435Ser)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Strong, PM5, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GUCY2D",
+    "variant": "NM_000180.4(GUCY2D):c.2302C>T (p.Arg768Trp)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GUCY2D",
+    "variant": "NM_000180.4(GUCY2D):c.1672G>A (p.Asp558Asn)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "HNF1A",
+    "variant": "NM_000545.8(HNF1A):c.416T>C (p.Leu139Pro)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "HNF1A",
+    "variant": "NM_000545.8(HNF1A):c.697G>C (p.Val233Leu)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "IDUA",
+    "variant": "NM_000203.5(IDUA):c.1598C>G (p.Pro533Arg)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "ITGA2B",
+    "variant": " NM_000419.5(ITGA2B):c.97A>G (p.Asn33Asp)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ITGA2B",
+    "variant": "NM_000419.4(ITGA2B):c.2870C>T (p.Ser957Leu)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "JAK3",
+    "variant": "NM_000215.4(JAK3):c.2680+89G>A",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "JAK3",
+    "variant": "NM_000215.4(JAK3):c.2311C>T (p.Arg771Ter)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "LDLR",
+    "variant": "NM_000527.5(LDLR):c.1285G>A (p.Val429Met)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "LDLR",
+    "variant": "NM_000527.4:c.-156C>T",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "LZTR1",
+    "variant": "NM_006767.4(LZTR1):c.850C>T (p.Arg284Cys)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "LZTR1",
+    "variant": "NM_006767.4(LZTR1):c.1943-256C>T",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "MECP2",
+    "variant": " NM_001110792.2(MECP2):c.505T>A (p.Phe169Ile)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM5, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "MECP2",
+    "variant": "NM_004992.3(MECP2):c.916C>T (p.Arg306Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "MTOR",
+    "variant": "NM_004958.4(MTOR):c.5005G>T (p.Ala1669Ser)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP2, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "MTOR",
+    "variant": "NM_004958.4(MTOR):c.5930C>G (p.Thr1977Arg)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM5, PP3_Moderate, PP2, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "MTOR",
+    "variant": "NM_004958.4(MTOR):c.4375G>T (p.Ala1459Ser)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP2, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "MYOC",
+    "variant": "NM_000261.2(MYOC):c.612G>A (p.Thr204=)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BS1, BP7",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "MYOC",
+    "variant": "NM_000261.2(MYOC):c.1495A>T (p.Ile499Phe)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "MYOC",
+    "variant": "NM_000261.2(MYOC):c.1456C>T",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "NEB",
+    "variant": "NM_001164508.2(NEB):c.22144A>C (p.Thr7382Pro)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "NA",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "NRAS",
+    "variant": "NM_002524.5(NRAS):c.179G>A (p.Gly60Glu)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "PAH",
+    "variant": "NM_000277.2(PAH):c.963C>T (p.Leu321=)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BA1, BP7",
+    "human_classification": "Benign",
+    "deepseek_classification": "Benign"
+  },
+  {
+    "gene": "PAH",
+    "variant": "NM_000277.2(PAH):c.820A>G (p.Lys274Glu)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BS1",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "PAH",
+    "variant": "NM_000277.3(PAH):c.969+1G>A",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "PAH",
+    "variant": "NM_000277.3(PAH):c.121C>T (p.Leu41Phe)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "PTEN",
+    "variant": "NM_000314.7(PTEN):c.210-39A>G",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BS1, PP2",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "PTEN",
+    "variant": "NM_000314.6(PTEN):c.755A>G (p.Asp252Gly)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PP2, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "PTEN",
+    "variant": "NM_000314.8(PTEN):c.40A>G (p.Arg14Gly)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PP2, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "RPE65",
+    "variant": "NM_000329.3(RPE65):c.1253T>A (p.Phe418Tyr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "RPE65",
+    "variant": "NM_000329.3(RPE65):c.1087C>A (p.Pro363Thr)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "RUNX1",
+    "variant": "NM_001754.5(RUNX1):c.592G>T (p.Asp198Tyr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "RUNX1",
+    "variant": "NM_001754.4(RUNX1):c.497G>A (p.Arg166Gln)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "RUNX1",
+    "variant": "NM_001754.5(RUNX1):c.367G>C (p.Asp123His)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "RYR1",
+    "variant": "NM_000540.2(RYR1):c.958_960del",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM4, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "RYR1",
+    "variant": "NM_000540.3(RYR1):c.14582G>A (p.Arg4861His)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM5, PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SERPINC1",
+    "variant": "NM_000488.4(SERPINC1):c.719A>G (p.Asn240Ser)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "SERPINC1",
+    "variant": "NM_000488.4(SERPINC1):c.439A>G (p.Thr147Ala)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "BP4",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "SERPINC1",
+    "variant": "NM_000488.4(SERPINC1):c.1152A>G (p.Pro384=)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "SGCB",
+    "variant": "NM_000232.5(SGCB):c.699_702del (p.Phe233fs)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SLC6A8",
+    "variant": "NM_005629.4(SLC6A8):c.619C>T (p.Arg207Trp)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "SLC6A8",
+    "variant": "NM_005629.4(SLC6A8):c.338G>A (p.Gly113Asp)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "SOS1",
+    "variant": "NM_005633.3(SOS1):c.1867T>A (p.Phe623Ile)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "TCF4",
+    "variant": "NM_001083962.1(TCF4):c.1739G>A (p.Arg580Gln)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "TP53",
+    "variant": "NM_000546.5(TP53):c.949C>A (p.Gln317Lys)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "TP53",
+    "variant": "NM_000546.5(TP53):c.364G>A (p.Val122Met)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PM2_Supporting, PP3",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "TP53",
+    "variant": "NM_000546.6(TP53):c.524G>T (p.Arg175Leu)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM5, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "TP53",
+    "variant": "NM_000546.6(TP53):c.523C>T (p.Arg175Cys)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "UBE3A",
+    "variant": "NM_130838.1(UBE3A):c.1745_1747delCTT (p.Ser582del)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM4, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "VHL",
+    "variant": "NM_000551.4(VHL):c.246C>T (p.Arg82=)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BS1, BP7",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "VHL",
+    "variant": "NM_000551.4(VHL):c.273C>A (p.Phe91Leu)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "VWF",
+    "variant": "NM_000552.5(VWF):c.4141A>G (p.Thr1381Ala)",
+    "clingen_classification": "Benign",
+    "lit_indep_rules": "BA1, BP4",
+    "human_classification": "Benign",
+    "deepseek_classification": "Benign"
+  },
+  {
+    "gene": "VWF",
+    "variant": "NM_000552.5(VWF):c.3686T>G (p.Val1229Gly)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BS1, BP4",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "VWF",
+    "variant": "NM_000552.5(VWF):c.3939G>C (p.Trp1313Cys)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "VWF",
+    "variant": "NM_000552.5(VWF):c.3946G>A (p.Val1316Met)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "VWF",
+    "variant": "NM_000552.5(VWF):c.3515G>T (p.Gly1172Val)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "ACADVL",
+    "variant": "NM_000018.4(ACADVL):c.848T>C (p.Val283Ala)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Suppporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "BRAF",
+    "variant": "NM_004333.6(BRAF):c.1454T>C (p.Leu485Ser)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM5, PM2_Supporting, PP2",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "CAPN3",
+    "variant": "NM_000070.3(CAPN3):c.550del (p.Thr184fs)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "DICER1",
+    "variant": "NM_030621.4(DICER1):c.2642T>C (p.Leu881Pro)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ENG",
+    "variant": "NM_001114753.3(ENG):c.1268A>G (p.Asn423Ser)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "ENG",
+    "variant": "NM_001114753.3(ENG):c.991G>A (p.Gly331Ser)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "F8",
+    "variant": "NM_000132.3(F8):c.2215G>A (p.Glu739Lys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "FBN1",
+    "variant": "NM_000138.5(FBN1):c.1453C>T (p.Arg485Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP2, PP3, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GAA",
+    "variant": "NM_000152.5(GAA):c.1796C>A (p.Ser599Tyr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_strong, PM2_supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GAA",
+    "variant": "NM_000152.5(GAA):c.546G>T (p.Thr182=)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GAA",
+    "variant": "NM_000152.5(GAA):c.1375G>A (p.Asp459Asn)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "GAMT",
+    "variant": "NM_000156.6(GAMT):c.268G>A (p.Glu90Lys)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GCK",
+    "variant": "NM_000162.5(GCK):c.389T>C (p.Ile130Thr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_strong, PM2_supporting, PP2",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "GP1BA",
+    "variant": "NM_000173.7(GP1BA):c.434T>C (p.Leu145Pro)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GP1BA",
+    "variant": "NM_000173.7:c.1454dup (p.Ser486IlefsTer12)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GP9",
+    "variant": "NM_000174.5(GP9):c.70T>C (p.Cys24Arg)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GP9",
+    "variant": "NM_000174.5(GP9):c.182A>G (p.Asn61Ser)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GP9",
+    "variant": "NM_000174.5(GP9):c.72T>G (p.Cys24Trp)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM5, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "GUCY2D",
+    "variant": "NM_000180.4(GUCY2D):c.3056A>C (p.His1019Pro)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "IDUA",
+    "variant": "NM_000203.5(IDUA):c.1487C>G (p.Pro496Arg)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "IL2RG",
+    "variant": "NM_000206.3(IL2RG):c.545G>A (p.Cys182Tyr)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "IL2RG",
+    "variant": "NM_000206.3(IL2RG):c.676C>T (p.Arg226Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "ITGA2B",
+    "variant": "NM_000419.5(ITGA2B):c.2800G>T (p.Val934Phe)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "LDLR",
+    "variant": "NM_000527.5(LDLR):c.1383C>T (p.Gly461=)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PM2_Supporting, BP4",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "LDLR",
+    "variant": "NM_000527.5(LDLR):c.1359-5C>G",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "MYOC",
+    "variant": "NM_000261.2(MYOC):c.1440C>A (p.Asn480Lys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "NEB",
+    "variant": "NM_001164508.2(NEB):c.1493A>G (p.Asp498Gly)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "NRAS",
+    "variant": "NM_002524.5(NRAS):c.71T>A (p.Ile24Asn)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "PAH",
+    "variant": "NM_000277.2(PAH):c.169G>A (p.Glu57Lys)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "PIK3CA",
+    "variant": "\nNM_006218.4(PIK3CA):c.325GAA[1] (p.Glu110del)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM4, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "PIK3CA",
+    "variant": "NM_006218.4(PIK3CA):c.3140A>G (p.His1047Arg)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP2, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "PTEN",
+    "variant": "NM_000314.7(PTEN):c.159A>G (p.Val53=)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PP2, PM2_Supporting, BP4",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "PTEN",
+    "variant": "NM_000314.7(PTEN):c.830C>G (p.Thr277Arg)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Strong, PP2, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "RUNX1",
+    "variant": "NM_001754.4(RUNX1):c.253C>A (p.His85Asn)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "RYR1",
+    "variant": "NM_000540.3(RYR1):c.958-11del",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "BS1, BP4",
+    "human_classification": "Likely benign",
+    "deepseek_classification": "Likely benign"
+  },
+  {
+    "gene": "RYR1",
+    "variant": "NM_000540.3(RYR1):c.13949T>C (p.Leu4650Pro)",
+    "clingen_classification": "VUS",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "SCN1A ",
+    "variant": "NM_001165963.4(SCN1A):c.2303C>T (p.Pro768Leu)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "SCN1A ",
+    "variant": "NM_001165963.4(SCN1A):c.2792G>A (p.Arg931His)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_strong, PM2_supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SERPINC1",
+    "variant": "NM_000488.4(SERPINC1):c.1277C>T (p.Ser426Leu)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SGCA",
+    "variant": "NM_000023.4(SGCA):c.100C>T (p.Arg34Cys)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM5, PP3_Moderate, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "SGCA",
+    "variant": "NM_000023.4(SGCA):c.229C>T (p.Arg77Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_strong",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SGCB",
+    "variant": "NM_000232.5(SGCB):c.271C>T (p.Arg91Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SGCG",
+    "variant": "NM_000231.3(SGCG):c.525del (p.Phe175fs)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PVS1",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SGCG",
+    "variant": "NM_000231.3(SGCG):c.87dup (p.Gly30fs)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PVS1, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "SLC6A8",
+    "variant": "NM_005629.4(SLC6A8):c.1000_1002AAC[2] (p.Asn336del)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PM4, PP3, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "TCF4",
+    "variant": "NM_001083962.1(TCF4):c.759C>G (p.Ser253Arg)",
+    "clingen_classification": "Likely pathogenic",
+    "lit_indep_rules": "PM2_Supporting",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "TP53",
+    "variant": "NM_000546.6(TP53):c.659A>G (p.Tyr220Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Moderate, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  },
+  {
+    "gene": "UBE3A",
+    "variant": "NM_130839.5(UBE3A):c.1576C>T (p.Arg526Cys)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3, PM2_Supporting",
+    "human_classification": "Likely pathogenic",
+    "deepseek_classification": "Likely pathogenic"
+  },
+  {
+    "gene": "VHL",
+    "variant": "NM_000551.4(VHL):c.89G>A (p.Gly30Glu)",
+    "clingen_classification": "Likely benign",
+    "lit_indep_rules": "PM2_Supporting, BP4",
+    "human_classification": "VUS",
+    "deepseek_classification": "VUS"
+  },
+  {
+    "gene": "VHL",
+    "variant": "NM_000551.4(VHL):c.191G>C (p.Arg64Pro)",
+    "clingen_classification": "Pathogenic",
+    "lit_indep_rules": "PP3_Strong, PM2_Supporting",
+    "human_classification": "Pathogenic",
+    "deepseek_classification": "Pathogenic"
+  }
+]

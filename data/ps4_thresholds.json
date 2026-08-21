@@ -1,0 +1,467 @@
+[
+  {
+    "genes": [
+      "DICER"
+    ],
+    "moi": "AD",
+    "disease": "DICER1\u00a0Tumor Predisposition",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "FBN1"
+    ],
+    "moi": "AD",
+    "disease": "Marfan syndrome",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "ACVRL1",
+      "ENG"
+    ],
+    "moi": "AD",
+    "disease": "HTT",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "RUNX1"
+    ],
+    "moi": "AD",
+    "disease": "Thrombocytopenia and hematologic cancer",
+    "phenotype_specificity": "Low",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "RYR1"
+    ],
+    "moi": "AD",
+    "disease": "RYR1-related myopathy",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "F8",
+      "F9"
+    ],
+    "moi": "X-linked",
+    "disease": "Hemophilia",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 8
+    }
+  },
+  {
+    "genes": [
+      "SERPINC1"
+    ],
+    "moi": "AD",
+    "disease": "Thrombophilia, antithrombin deficiency",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 8
+    }
+  },
+  {
+    "genes": [
+      "VWF"
+    ],
+    "moi": "AD",
+    "disease": "von Willebrand disease, with clinical assay confirmation",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 8
+    }
+  },
+  {
+    "genes": [
+      "PTEN"
+    ],
+    "moi": "AD",
+    "disease": "PTEN hamartoma tumor syndrome",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "AKT3",
+      "MTOR",
+      "PIK3CA",
+      "PIK3R2"
+    ],
+    "moi": "AD",
+    "disease": "Cortical dysplasia",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "APC"
+    ],
+    "moi": "AD",
+    "disease": "Familial adenomatous polyposis",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "CDH1"
+    ],
+    "moi": "AD",
+    "disease": "Diffuse gastric cancer",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "SCN1A"
+    ],
+    "moi": "AD",
+    "disease": "Dravet syndrome",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "SCN2A"
+    ],
+    "moi": "AD",
+    "disease": "EIDEE",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "SCN3A"
+    ],
+    "moi": "AD",
+    "disease": "EOEE",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": "NA",
+      "moderate": 1,
+      "strong": 2,
+      "very_strong": 4
+    }
+  },
+  {
+    "genes": [
+      "SCN8A"
+    ],
+    "moi": "AD",
+    "disease": "EOEE",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "SCN1B"
+    ],
+    "moi": "AD",
+    "disease": "EIDEE",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "IL2RG"
+    ],
+    "moi": "X-linked",
+    "disease": "X-SCID",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 2,
+      "strong": 4,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "BMPR2"
+    ],
+    "moi": "AD",
+    "disease": "Pulmonary arterial hypertension",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 3,
+      "strong": 4,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "SHOC2",
+      "NRAS",
+      "RAF1",
+      "SOS1",
+      "SOS2",
+      "PTPN11",
+      "KRAS",
+      "MAP2K1",
+      "HRAS",
+      "RIT1",
+      "MAP2K2",
+      "BRAF",
+      "MRAS",
+      "LZTR1",
+      "RRAS2",
+      "PPP1CB"
+    ],
+    "moi": "AD",
+    "disease": "RASopathy",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 1,
+      "moderate": 3,
+      "strong": 5,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "FOXN1"
+    ],
+    "moi": "AD",
+    "disease": "T-cell immunodeficiency with thymic aplasia",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 3,
+      "strong": 5,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "TCF4",
+      "SLC9A6",
+      "CDKL5",
+      "FOXG1",
+      "MECP2",
+      "UBE3A"
+    ],
+    "moi": "AD/X-linked",
+    "disease": "Neurodevelopmental disorder",
+    "phenotype_specificity": "Low",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 3,
+      "strong": 5,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "MTM1"
+    ],
+    "moi": "X-linked",
+    "disease": "Centronuclear myopathy",
+    "phenotype_specificity": null,
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 3,
+      "strong": 5,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "HNF1A",
+      "HNF4A",
+      "GCK"
+    ],
+    "moi": "AD",
+    "disease": "MODY",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": "NA",
+      "moderate": 4,
+      "strong": 7,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "TP53"
+    ],
+    "moi": "AD",
+    "disease": "LFS meeting Revised Chompret",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 4,
+      "strong": 8,
+      "very_strong": 16
+    }
+  },
+  {
+    "genes": [
+      "ACTA1"
+    ],
+    "moi": "AD",
+    "disease": "Nemaline myopathy",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 4,
+      "strong": 8,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "VHL"
+    ],
+    "moi": "AD",
+    "disease": "Von Hippel-Lindau disease",
+    "phenotype_specificity": "Moderate",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 4,
+      "strong": 10,
+      "very_strong": 32
+    }
+  },
+  {
+    "genes": [
+      "RYR1"
+    ],
+    "moi": "AD",
+    "disease": "Malignant Hyperthermia",
+    "phenotype_specificity": "High",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 4,
+      "strong": 14,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "LDLR"
+    ],
+    "moi": "AD",
+    "disease": "Familial hypercholesterolemia",
+    "phenotype_specificity": "Low",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 6,
+      "strong": 10,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "COCH",
+      "KCNQ4",
+      "MYO6",
+      "MYO7A",
+      "TECTA"
+    ],
+    "moi": "AD",
+    "disease": "Non-syndromic genetic deafness",
+    "phenotype_specificity": "Low",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 6,
+      "strong": 15,
+      "very_strong": "NA"
+    }
+  },
+  {
+    "genes": [
+      "MYOC"
+    ],
+    "moi": "AD",
+    "disease": "Congenital glaucoma",
+    "phenotype_specificity": "Low",
+    "thresholds": {
+      "supporting": 2,
+      "moderate": 6,
+      "strong": 15,
+      "very_strong": "NA"
+    }
+  }
+]

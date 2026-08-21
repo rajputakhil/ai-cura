@@ -1,0 +1,86 @@
+[
+  {
+    "segregation_type": "Autosomal-recessive affected",
+    "genotype": "Having the target variant AND\nHaving another variant",
+    "phenotype": "Affected",
+    "points": 2,
+    "remark": null
+  },
+  {
+    "segregation_type": "Autosomal-recessive unaffected (Other than proband\u2019s parents)",
+    "genotype": "Carrier of either variants OR\nWild-type for both variants",
+    "phenotype": "Unaffected",
+    "points": 0.4,
+    "remark": "Only count if disease is fully penetrant\nDo not count proband's unaffected parents as unaffected segregation"
+  },
+  {
+    "segregation_type": "Autosomal-dominant affected",
+    "genotype": "Having the target variant",
+    "phenotype": "Affected",
+    "points": 1,
+    "remark": "Obligate carrier can be counted as having the variant"
+  },
+  {
+    "segregation_type": "Autosomal-dominant unaffected",
+    "genotype": "Not having the target variant",
+    "phenotype": "Unaffected",
+    "points": 1,
+    "remark": "Only count if disease is fully penetrant"
+  },
+  {
+    "segregation_type": "X-linked-recessive male affected",
+    "genotype": "Having the target variant",
+    "phenotype": "Affected",
+    "points": 1,
+    "remark": "Obligate carrier can be counted as having the variant"
+  },
+  {
+    "segregation_type": "X-linked-recessive male unaffected",
+    "genotype": "Not having the target variant",
+    "phenotype": "Unaffected",
+    "points": 1,
+    "remark": null
+  },
+  {
+    "segregation_type": "X-linked-recessive female affected",
+    "genotype": "Having the target variant",
+    "phenotype": "Affected",
+    "points": 0,
+    "remark": "Obligate carrier can be counted as having the variant"
+  },
+  {
+    "segregation_type": "X-linked-recessive female unaffected",
+    "genotype": "Not having the target variant",
+    "phenotype": "Unaffected",
+    "points": 1,
+    "remark": null
+  },
+  {
+    "segregation_type": "X-linked-dominant male affected",
+    "genotype": "Having the target variant",
+    "phenotype": "Affected",
+    "points": 1,
+    "remark": "Obligate carrier can be counted as having the variant"
+  },
+  {
+    "segregation_type": "X-linked-dominant male unaffected",
+    "genotype": "Not having the target variant",
+    "phenotype": "Unaffected",
+    "points": 1,
+    "remark": null
+  },
+  {
+    "segregation_type": "X-linked-dominant female affected",
+    "genotype": "Having the target variant",
+    "phenotype": "Affected",
+    "points": 1,
+    "remark": null
+  },
+  {
+    "segregation_type": "X-linked-dominant female unaffected",
+    "genotype": "Not having the target variant",
+    "phenotype": "Unaffected",
+    "points": 1,
+    "remark": "Obligate carrier can be counted as having the variant"
+  }
+]

@@ -1,0 +1,35 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT — for demoing AI-CURA multi-paper aggregation only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+This is a SECOND, INDEPENDENT study of the same variant as sample_paper.txt, from a different
+group — use both together to demonstrate cross-paper aggregation and cohort de-duplication.
+
+Title: Independent replication of an MYBPC3 missense variant in a European hypertrophic
+cardiomyopathy cohort
+Authors: M. Different, N. Separate, O. Independent (Northern European Cardiogenetics Consortium)
+Recruitment: an independent cohort of 58 unrelated probands with hypertrophic cardiomyopathy (HCM)
+was recruited across three European centers between March 2015 and June 2021. This cohort has no
+overlap with any previously published series. Whole-genome sequencing was performed.
+
+Target variant: NM_000256.3:c.1504C>T (p.Arg502Trp)
+
+CASE ENRICHMENT
+The variant was found in 4 unrelated probands (4/58) and was absent from 5,120 in-house population
+controls without cardiac disease. Each carrier was an independent proband from a distinct family.
+
+SEGREGATION
+In two multiplex families followed at our centers, the variant was tracked by Sanger sequencing and
+cosegregated with genetically confirmed HCM in 5 additional affected relatives beyond the probands.
+One obligate carrier was documented. No genetically confirmed carrier over age 45 was unaffected.
+
+FUNCTIONAL STUDIES
+Independently of prior work, we generated induced pluripotent stem cell–derived cardiomyocytes
+(iPSC-CMs) from two carriers and isogenic controls. Compared with wild-type and a null (truncating)
+control, the p.Arg502Trp cardiomyocytes showed impaired contractility and reduced myosin-binding
+protein C incorporation. Both normal and abnormal controls were included. These assays were
+performed by the study authors.
+
+PHENOTYPE
+All four carriers presented the characteristic HCM phenotype (asymmetric septal hypertrophy). The
+genetic workup (WGS) excluded other sarcomeric-gene variants in all carriers.
+
+No RNA-based splicing study was performed for this variant.

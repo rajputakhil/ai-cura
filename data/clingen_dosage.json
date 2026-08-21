@@ -1,0 +1,27 @@
+{
+  "_comment": "Curated subset of the ClinGen Dosage Sensitivity Map (GRCh38). HI = haploinsufficiency score, TS = triplosensitivity score. 3 = sufficient evidence (established), 2 = some evidence, 1 = little evidence, 30 = autosomal recessive, 40 = dosage sensitivity unlikely. Replace/extend with the full ClinGen download for production use: https://ftp.clinicalgenome.org/",
+  "build": "GRCh38",
+  "genes": [
+    {"name": "RAI1",    "chrom": "17", "start": 17681875,  "end": 17811453,  "hi": 3,  "ts": 3,  "condition": "Smith-Magenis (del) / Potocki-Lupski (dup)"},
+    {"name": "NSD1",    "chrom": "5",  "start": 177133175, "end": 177300570, "hi": 3,  "ts": 0,  "condition": "Sotos syndrome"},
+    {"name": "TCF4",    "chrom": "18", "start": 55222331,  "end": 55635957,  "hi": 3,  "ts": 0,  "condition": "Pitt-Hopkins syndrome"},
+    {"name": "MECP2",   "chrom": "X",  "start": 154021573, "end": 154137103, "hi": 3,  "ts": 3,  "condition": "Rett (del) / MECP2 duplication syndrome (dup)"},
+    {"name": "NF1",     "chrom": "17", "start": 31094927,  "end": 31377677,  "hi": 3,  "ts": 0,  "condition": "Neurofibromatosis type 1"},
+    {"name": "PTEN",    "chrom": "10", "start": 87863113,  "end": 87971930,  "hi": 3,  "ts": 0,  "condition": "PTEN hamartoma tumor syndrome"},
+    {"name": "TP53",    "chrom": "17", "start": 7668421,   "end": 7687550,   "hi": 3,  "ts": 0,  "condition": "Li-Fraumeni syndrome"},
+    {"name": "CREBBP",  "chrom": "16", "start": 3725055,   "end": 3880120,   "hi": 3,  "ts": 0,  "condition": "Rubinstein-Taybi syndrome"},
+    {"name": "EHMT1",   "chrom": "9",  "start": 137672447, "end": 137818357, "hi": 3,  "ts": 0,  "condition": "Kleefstra syndrome"},
+    {"name": "NIPBL",   "chrom": "5",  "start": 37001036,  "end": 37186915,  "hi": 3,  "ts": 0,  "condition": "Cornelia de Lange syndrome"},
+    {"name": "SHANK3",  "chrom": "22", "start": 50672819,  "end": 50733212,  "hi": 3,  "ts": 0,  "condition": "Phelan-McDermid syndrome"},
+    {"name": "CHD7",    "chrom": "8",  "start": 60678738,  "end": 60868028,  "hi": 3,  "ts": 0,  "condition": "CHARGE syndrome"},
+    {"name": "ARID1B",  "chrom": "6",  "start": 156777542, "end": 157210779, "hi": 3,  "ts": 0,  "condition": "Coffin-Siris syndrome"},
+    {"name": "PMP22",   "chrom": "17", "start": 15229777,  "end": 15265326,  "hi": 3,  "ts": 3,  "condition": "HNPP (del) / Charcot-Marie-Tooth 1A (dup)"},
+    {"name": "PLP1",    "chrom": "X",  "start": 103776506, "end": 103792619, "hi": 0,  "ts": 3,  "condition": "Pelizaeus-Merzbacher disease (dup)"},
+    {"name": "SNCA",    "chrom": "4",  "start": 89724099,  "end": 89838315,  "hi": 0,  "ts": 3,  "condition": "Parkinson disease (dup/trip)"},
+    {"name": "22q11.21 region", "chrom": "22", "start": 18900000, "end": 21500000, "hi": 3, "ts": 3, "condition": "DiGeorge/VCFS (del) / 22q11.2 dup syndrome"},
+    {"name": "16p11.2 region",  "chrom": "16", "start": 29600000, "end": 30200000, "hi": 3, "ts": 3, "condition": "16p11.2 deletion/duplication syndrome"},
+    {"name": "7q11.23 region",  "chrom": "7",  "start": 72700000, "end": 74150000, "hi": 3, "ts": 3, "condition": "Williams-Beuren (del) / 7q11.23 dup syndrome"},
+    {"name": "15q11-q13 region","chrom": "15", "start": 23600000, "end": 28200000, "hi": 3, "ts": 3, "condition": "Prader-Willi/Angelman (del) / dup syndrome"},
+    {"name": "1q21.1 region",   "chrom": "1",  "start": 146500000,"end": 147900000,"hi": 2, "ts": 2, "condition": "1q21.1 deletion/duplication syndrome"}
+  ]
+}
