@@ -125,24 +125,33 @@ python main.py --variant "rs80357906" --output json
 
 ```mermaid
 flowchart TD
-    H["main.py (CLI)"] --> B
-    I["app.py (Streamlit dashboard)"] --> B
-    J["recheck.py (VUS re-review loop)"] --> B
+    H["main.py (CLI)"]:::entry --> B
+    I["app.py (Streamlit dashboard)"]:::entry --> B
+    J["recheck.py (VUS re-review loop)"]:::entry --> B
 
-    B["variant.py — parse & normalize<br/>HGVS / rsID / VCF / CNV"] --> C1["SNV / Indel path"]
-    B --> C2["CNV path"]
+    B["variant.py — parse & normalize<br/>HGVS / rsID / VCF / CNV"]:::neutral --> C1["SNV / Indel path"]:::snv
+    B --> C2["CNV path"]:::cnv
 
-    C1 --> D1["apis.py<br/>Ensembl VEP + gnomAD + ClinVar (live)"]
-    C2 --> D2["cnv.py<br/>ClinGen dosage-sensitivity scoring"]
+    C1 --> D1["apis.py<br/>Ensembl VEP + gnomAD + ClinVar (live)"]:::snv
+    C2 --> D2["cnv.py<br/>ClinGen dosage-sensitivity scoring"]:::cnv
 
-    D1 --> E["acmg.py<br/>ACMG/AMP rule engine (deterministic)"]
+    D1 --> E["acmg.py<br/>ACMG/AMP rule engine (deterministic)"]:::engine
     D2 --> E
 
-    E --> F1["Rule-based summary (no LLM)"]
-    E --> F2["llm.py — optional (--llm)<br/>+ uploaded literature + Claude/Ollama synthesis"]
+    E --> F1["Rule-based summary (no LLM)"]:::rule
+    E --> F2["llm.py — optional (--llm)<br/>+ uploaded literature + Claude/Ollama synthesis"]:::llm
 
-    F1 --> G["Classification Report<br/>Benign → Pathogenic"]
+    F1 --> G["Classification Report<br/>Benign → Pathogenic"]:::output
     F2 --> G
+
+    classDef entry fill:#F2F3F4,stroke:#8FA3AA,stroke-width:1.5px,color:#20262A;
+    classDef neutral fill:#6B7478,stroke:#6B7478,color:#FFFFFF;
+    classDef snv fill:#4A6670,stroke:#4A6670,color:#FFFFFF;
+    classDef cnv fill:#8FA3AA,stroke:#8FA3AA,color:#20262A;
+    classDef engine fill:#9C7A4A,stroke:#9C7A4A,color:#FFFFFF;
+    classDef rule fill:#33454C,stroke:#8FA3AA,stroke-width:1.5px,color:#FFFFFF;
+    classDef llm fill:#4A6670,stroke:#9C7A4A,stroke-width:2px,color:#FFFFFF;
+    classDef output fill:#20262A,stroke:#20262A,color:#FFFFFF;
 ```
 
 **Module reference**
