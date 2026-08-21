@@ -51,8 +51,7 @@ EXAMPLE_VARIANTS = {
 # Sidebar
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chromosome_DNA_Gene.png/220px-Chromosome_DNA_Gene.png",
-             width=80)
+    st.markdown("<div style='font-size:44px; line-height:1;'>🧬</div>", unsafe_allow_html=True)
     st.title("AI-CURA")
     st.caption("Automated LLM workflow for genetic variant classification")
     st.divider()
