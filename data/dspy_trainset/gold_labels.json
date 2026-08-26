@@ -1,0 +1,57 @@
+[
+  {
+    "paper": "paper_ps4_only.txt",
+    "variant": "NM_198056.3:c.5350G>A",
+    "gold": [
+      {"code": "PS4", "met": true}
+    ],
+    "note": "Case enrichment only (9/85 vs 3212 controls, p<0.001). No segregation, functional, RNA, de novo, or phenotype-specificity evidence provided."
+  },
+  {
+    "paper": "paper_pp1_only.txt",
+    "variant": "NM_170707.4:c.1130G>A",
+    "gold": [
+      {"code": "PP1", "met": true}
+    ],
+    "note": "Cosegregation across 8 affected relatives + 2 obligate carriers in a dominant pedigree. No second pathogenic variant is ever named, so PM3 must NOT be returned even though this is family/segregation data."
+  },
+  {
+    "paper": "paper_pm3_true.txt",
+    "variant": "NM_000277.3:c.1066-11G>A",
+    "gold": [
+      {"code": "PM3", "met": true}
+    ],
+    "note": "Recessive gene (PAH/PKU); target variant confirmed in trans with the named, well-established pathogenic variant c.1222C>T (p.Arg408Trp). This is a true PM3 case. Should NOT be labeled PP1 -- this is a single trio, not multi-generation cosegregation."
+  },
+  {
+    "paper": "paper_de_novo.txt",
+    "variant": "NM_021007.3:c.2573G>A",
+    "gold": [
+      {"code": "PS2_PM6", "met": true}
+    ],
+    "note": "Three independently confirmed de novo occurrences (trio testing, parentage confirmed, absent in both parents each time)."
+  },
+  {
+    "paper": "paper_splicing.txt",
+    "variant": "NM_000088.4:c.588+5G>A",
+    "gold": [
+      {"code": "PVS1_RNA", "met": true}
+    ],
+    "note": "RT-PCR + RNA-seq confirms near-complete exon 8 skipping, frameshift, predicted NMD. Proband vs. control RNA both analyzed."
+  },
+  {
+    "paper": "paper_ps3_pp4.txt",
+    "variant": "NM_000218.3:c.1030C>T",
+    "gold": [
+      {"code": "PS3", "met": true},
+      {"code": "PP4", "met": true}
+    ],
+    "note": "Patch-clamp functional assay with wild-type AND null controls showing loss of function (PS3). Phenotype (QTc>480ms + syncope/arrest) highly specific to KCNQ1/LQT1, other LQTS genes excluded by panel (PP4). No segregation, case-control, RNA, or de novo evidence -- PP1/PS4/PVS1_RNA/PS2_PM6/PM3 must NOT be returned."
+  },
+  {
+    "paper": "paper_negative.txt",
+    "variant": "NM_000257.4:c.2167C>T",
+    "gold": [],
+    "note": "Single clinical case, only in silico predictions (PolyPhen/REVEL) mentioned -- those are literature-INDEPENDENT criteria handled elsewhere in AI-CURA, not by this extractor. No case-control, segregation, functional, RNA, or de novo evidence. Correct answer is an empty list."
+  }
+]

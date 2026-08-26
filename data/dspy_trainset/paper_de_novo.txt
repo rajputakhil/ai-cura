@@ -1,0 +1,24 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test PS2_PM6 (de novo occurrence) IN ISOLATION.
+
+Title: Recurrent de novo SCN2A missense variant in three unrelated children with early-onset
+developmental and epileptic encephalopathy
+Authors: G. Fictional, H. Example (Center for Demonstration Pediatric Neurogenetics)
+Recruitment: 3 unrelated probands with early-onset developmental and epileptic encephalopathy
+were recruited via a pediatric neurogenetics clinic between 2019 and 2023. Trio (proband +
+both biological parents) whole-exome sequencing was performed for all three families.
+
+Target variant: NM_021007.3:c.2573G>A (p.Arg858Gln)
+
+DE NOVO CONFIRMATION
+The target variant was identified in all 3 probands. In each family, targeted Sanger sequencing
+confirmed the variant was absent in both biological parents, and biological parentage was
+confirmed by informative SNP analysis in all three trios. All three occurrences are therefore
+independently confirmed de novo events. No parent in any family carried the variant, and none of
+the parents reported a personal history of seizures or developmental delay.
+
+No case-control cohort comparison was performed for this variant. No functional (electrophysiology)
+studies were conducted. No RNA-based splicing study was performed. Phenotypes across the three
+probands varied in severity and are not considered specific enough on their own, independent of
+the de novo evidence, to support a phenotype-specificity claim.

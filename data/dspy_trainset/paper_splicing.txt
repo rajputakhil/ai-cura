@@ -1,0 +1,24 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test PVS1_RNA (RNA-confirmed splicing loss-of-function) IN ISOLATION.
+
+Title: RNA sequencing confirms exon skipping and a frameshift for a COL1A1 intronic variant in a
+family with osteogenesis imperfecta
+Authors: I. Placeholder, J. Demonstration (Fictional Institute of Skeletal Genetics)
+Recruitment: a single proband with a clinical diagnosis of osteogenesis imperfecta, referred for
+genetic testing after a fracture history inconsistent with accidental trauma.
+
+Target variant: NM_000088.4:c.588+5G>A
+
+RNA STUDY
+RNA was extracted from proband-derived skin fibroblasts and analyzed by RT-PCR followed by
+Sanger sequencing of the resulting products, alongside RNA-seq for confirmation. The RT-PCR
+products from the proband showed a shorter band than controls, consistent with skipping of the
+adjacent exon. Sequencing confirmed complete skipping of exon 8 in the vast majority of transcript
+reads (near-complete proportion), which removes 61 nucleotides and shifts the reading frame,
+predicted to trigger nonsense-mediated decay (NMD) of the resulting transcript. Both proband and
+unaffected control fibroblast RNA were analyzed in parallel using the same protocol.
+
+No case-control cohort was assembled for this variant. No cosegregation data are available, as no
+other family members were tested. No de novo status has been established, as parental samples
+were not available. This single RNA-seq/RT-PCR study is the only functional evidence reported.

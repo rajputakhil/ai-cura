@@ -1,0 +1,27 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test PP1 (cosegregation) IN ISOLATION, and specifically to contrast with PM3:
+this is a DOMINANT condition, no second pathogenic variant is ever mentioned, and no case-control
+or functional data are provided. A correct extractor must return PP1 and must NOT return PM3.
+
+Title: Cosegregation of an LMNA missense variant with autosomal dominant dilated cardiomyopathy
+in a five-generation family
+Authors: C. Example, D. Fictional (Northern Demonstration Cardiogenetics Group)
+Recruitment: a single five-generation family with a history of dilated cardiomyopathy (DCM) and
+conduction disease was ascertained through a proband referred for cardiac genetic testing.
+
+Target variant: NM_170707.4:c.1130G>A (p.Arg377His)
+
+SEGREGATION
+The variant was tracked by Sanger sequencing across all available family members. It cosegregated
+with clinically confirmed DCM and/or conduction disease in 8 affected relatives across three
+generations, in addition to the proband. Two individuals were obligate carriers based on their
+position in the pedigree (each has an affected parent and an affected child) and were counted as
+carrying the variant without direct genetic confirmation. No genetically confirmed carrier over
+age 40 was free of cardiac disease. This is an autosomal dominant pedigree with no consanguinity
+and no history suggestive of recessive inheritance.
+
+No case-control cohort was assembled for this variant, so no enrichment statistic is reported. No
+functional studies of the variant were performed. No RNA-based splicing study was performed. The
+proband's phenotype (DCM with conduction disease) is common to many cardiomyopathy genes and is
+not considered specific enough to LMNA on its own to support a phenotype-specificity claim.
