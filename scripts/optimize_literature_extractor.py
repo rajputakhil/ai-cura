@@ -48,7 +48,7 @@ def load_examples():
     examples = []
     for entry in labels:
         paper_text = (TRAINSET_DIR / entry["paper"]).read_text()
-        gold = frozenset((g["code"], g["met"]) for g in entry["gold"])
+        gold = frozenset(g["code"] for g in entry["gold"] if g["met"])
         ex = dspy.Example(
             variant=entry["variant"],
             paper_text=paper_text,
@@ -59,13 +59,21 @@ def load_examples():
 
 
 def criteria_set(criteria):
-    """Turn a predicted list of LitCriterion (pydantic objects) into a
-    comparable set of (code, met) tuples."""
-    return {(c.code, c.met) for c in criteria}
+    """Codes the extractor is actually asserting apply.
+
+    The signature asks the model to walk through every literature-dependent
+    criterion, so a prediction commonly includes entries for criteria it
+    considered and correctly ruled out (met=False) alongside the ones that
+    apply. Those ruled-out entries aren't predictions of anything -- counting
+    them as false positives just because the model reported checking them
+    would punish exactly the thorough behavior the prompt asks for. Only
+    met=True entries are real assertions, so only those count here.
+    """
+    return {c.code for c in criteria if c.met}
 
 
 def metric(example, prediction, trace=None):
-    """F1 over (code, met) pairs between predicted and gold criteria.
+    """F1 over asserted criterion codes (met=True) between predicted and gold.
     Both empty (correct negative) scores a perfect 1.0."""
     predicted = criteria_set(prediction.criteria)
     gold = example.gold
