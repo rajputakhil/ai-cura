@@ -53,11 +53,26 @@ class ExtractLiteratureCriteria(dspy.Signature):
     primary paper. Only use evidence the paper's authors explicitly report FOR THIS
     VARIANT -- never assumptions, deductions, or work the paper merely cites.
 
-    Criteria: PS3 (functional assay; needs wild-type AND null controls), PS4 (case
-    enrichment vs. controls), PM3 (recessive gene, found in trans with a known
-    pathogenic variant), PS2_PM6 (confirmed/assumed de novo), PP1 (cosegregation
-    with disease across affected family members), PP4 (phenotype highly specific
-    to the gene), PVS1_RNA (RNA study confirms a splicing loss-of-function effect).
+    Criteria:
+    - PS3: functional assay shows a damaging effect (needs wild-type AND null controls)
+    - PS4: case enrichment vs. controls (variant significantly more frequent in
+      affected cases than in controls)
+    - PM3: ONLY for a recessive gene, where the target variant is found in trans
+      (opposite chromosome copy) with a SEPARATE, independently-identified
+      pathogenic variant in the same gene. The paper must name that second
+      variant specifically. Do NOT apply PM3 just because the variant runs in a
+      family or cosegregates with disease across relatives -- that is PP1, not
+      PM3. If no distinct second pathogenic variant in trans is named, PM3 does
+      not apply, no matter how large or multi-generation the family is.
+    - PS2_PM6: confirmed (PS2) or assumed (PM6) de novo occurrence
+    - PP1: cosegregation with disease across affected family members (the variant
+      is tracked through relatives who are affected)
+    - PP4: phenotype highly specific to this gene / well-characterized workup
+    - PVS1_RNA: RNA study confirms a splicing loss-of-function effect
+
+    PP1 and PM3 are commonly confused: cosegregation or family-inheritance
+    evidence alone is PP1. PM3 requires a second, distinct pathogenic variant
+    in trans -- never infer PM3 from segregation data by itself.
 
     If no literature-dependent criteria apply, return an empty list.
     """
