@@ -1,0 +1,26 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered as a clean NEGATIVE example: the paper discusses the variant but explicitly reports
+NONE of the literature-dependent evidence types. Only in silico predictions are mentioned, and
+in silico scores are literature-INDEPENDENT (handled elsewhere in AI-CURA, not by this extractor).
+A correct extractor must return an EMPTY list for this paper.
+
+Title: A case report of a rare MYH7 missense variant identified by clinical panel testing in a
+patient with hypertrophic cardiomyopathy
+Authors: M. Placeholder, N. Fictional (Fictional Regional Genetics Service)
+Recruitment: a single proband with hypertrophic cardiomyopathy (HCM) identified via a commercial
+clinical cardiomyopathy gene panel ordered as part of routine care.
+
+Target variant: NM_000257.4:c.2167C>T (p.Arg723Cys)
+
+The variant was identified in one proband. No case-control cohort was assembled and no enrichment
+analysis was performed. No family members were available or willing to undergo testing, so no
+segregation data could be obtained. No functional (in vitro or in vivo) studies of this variant
+have been performed by this group or reported elsewhere. No RNA-based splicing study was performed.
+No trio or parental testing was performed, so de novo status could not be assessed, and the gene
+is not associated with a recessive disease mechanism.
+
+The variant is predicted "possibly damaging" by PolyPhen-2 and has a REVEL score of 0.71. These
+computational predictions are the only supporting information available for this variant beyond
+its identification in a single clinical case; they are not, by themselves, one of the
+literature-dependent criteria evaluated here.

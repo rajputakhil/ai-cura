@@ -1,0 +1,28 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test a TRUE PM3 case: a recessive gene, with the target variant explicitly
+confirmed IN TRANS with a SEPARATE, NAMED, well-established pathogenic variant. This is the
+positive counterpart to paper_pp1_only.txt, which must NOT trigger PM3.
+
+Title: A novel PAH missense variant identified in trans with a known pathogenic variant in an
+infant with phenylketonuria
+Authors: E. Placeholder, F. Demonstration (Institute of Fictional Metabolic Genetics)
+Recruitment: a single proband identified through newborn screening for phenylketonuria (PKU), a
+well-established autosomal recessive metabolic disorder, followed by confirmatory biochemical and
+molecular testing.
+
+Target variant: NM_000277.3:c.1066-11G>A
+
+TRANS CONFIGURATION
+Molecular testing identified the target variant on one allele. Parental testing confirmed the
+proband's mother carries the target variant and is otherwise unaffected. The proband's father was
+found to carry the well-established pathogenic variant NM_000277.3:c.1222C>T (p.Arg408Trp), which
+is one of the most common pathogenic PAH alleles and is absent in the mother. Segregation in the
+family therefore confirms the target variant is in trans with (on the opposite chromosome from)
+the known pathogenic c.1222C>T variant, consistent with the proband's autosomal recessive PKU
+phenotype.
+
+No case-control cohort was assembled for the target variant, so no enrichment statistic is
+available. No functional assay of the target variant was performed. No RNA-based splicing study
+was performed. Segregation data are limited to this single trio and do not constitute the kind of
+multi-generation affected-relative cosegregation that would support PP1.

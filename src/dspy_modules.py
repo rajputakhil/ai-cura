@@ -15,6 +15,7 @@ throughout llm.py, so callers don't need to change how they choose a backend.
 """
 
 import os
+from pathlib import Path
 from typing import Literal, Optional
 
 import dspy
@@ -122,13 +123,28 @@ def configure(backend: str = "claude", model: Optional[str] = None,
     _lm_cache["key"] = cache_key
 
 
+_COMPILED_PATH = Path(__file__).parent / "dspy_compiled_literature_extractor.json"
+
+
 class LiteratureCriteriaExtractor(dspy.Module):
     """ChainOfThought so the reasoning trace is available to callers for QC
-    review (surfaced as `raw`), not just the final structured criteria list."""
+    review (surfaced as `raw`), not just the final structured criteria list.
+
+    If scripts/optimize_literature_extractor.py has produced a compiled
+    program (better few-shot demos than the hand-written prompt alone,
+    validated against data/dspy_trainset/), it is loaded automatically here.
+    Falls back silently to the hand-written prompt if no compiled artifact
+    exists yet, or if loading it fails for any reason.
+    """
 
     def __init__(self):
         super().__init__()
         self.extract = dspy.ChainOfThought(ExtractLiteratureCriteria)
+        if _COMPILED_PATH.exists():
+            try:
+                self.load(str(_COMPILED_PATH))
+            except Exception:
+                pass
 
     def forward(self, variant: str, paper_text: str):
         return self.extract(variant=variant, paper_text=paper_text[:12000])

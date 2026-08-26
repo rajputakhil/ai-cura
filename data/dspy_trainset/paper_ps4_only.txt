@@ -1,0 +1,26 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test PS4 (case enrichment) IN ISOLATION -- no segregation, functional, or
+phenotype-specificity evidence is provided, so nothing else should be extracted.
+
+Title: Case-control enrichment of a recurrent SCN5A missense variant in Brugada syndrome
+Authors: A. Fictional, B. Placeholder (Institute of Demonstration Cardiogenetics)
+Recruitment: 85 unrelated probands with a clinical diagnosis of Brugada syndrome were recruited
+from a single arrhythmia referral center between 2016 and 2023. Diagnostic ajmaline challenge
+testing was performed on all probands. Whole-exome sequencing was performed on all probands.
+
+Target variant: NM_198056.3:c.5350G>A (p.Val1784Met)
+
+CASE ENRICHMENT
+The variant was identified in 9 unrelated probands in our Brugada syndrome cohort (9/85). It was
+absent from 3,212 in-house control exomes from individuals without a personal or family history
+of arrhythmia. Each of the 9 carriers was an independent proband from a distinct family; only the
+proband was counted per family. The enrichment of this variant in cases versus controls was
+statistically significant (p < 0.001).
+
+No family members of any carrier were available for follow-up testing, so no segregation analysis
+could be performed. No functional (electrophysiological) studies of this variant were undertaken
+by this group or reported elsewhere. No RNA-based splicing study was performed for this variant.
+Carriers presented with a range of arrhythmia phenotypes (syncope, documented VT, and asymptomatic
+ECG findings on family screening for unrelated reasons); this phenotypic range is not considered
+distinctive enough to be highly specific to SCN5A-related disease on its own.

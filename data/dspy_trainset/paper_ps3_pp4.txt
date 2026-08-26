@@ -1,0 +1,33 @@
+ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.
+Author names, institutions, and data below are fictional and must not be cited as real evidence.
+Engineered to test TWO criteria together without confusion: PS3 (functional assay with proper
+controls) and PP4 (phenotype highly specific to the gene) -- while explicitly providing no
+segregation, case-control, or RNA evidence, so PP1/PS4/PVS1_RNA/PM3/PS2_PM6 must NOT be returned.
+
+Title: Functional characterization of a KCNQ1 missense variant and phenotype specificity in
+Long QT syndrome type 1
+Authors: K. Fictional, L. Example (Fictional Cardiac Electrophysiology Consortium)
+Recruitment: 5 unrelated probands with a clinical diagnosis of Long QT syndrome (LQTS), identified
+through a cardiology genetics clinic, each undergoing a comprehensive cardiac genetic workup.
+
+Target variant: NM_000218.3:c.1030C>T (p.Arg344Cys)
+
+FUNCTIONAL STUDIES
+The variant was introduced into a heterologous expression system (CHO cells) and characterized by
+whole-cell patch-clamp electrophysiology. Compared with wild-type IKs channel current and a
+well-characterized non-functional (null) channel construct used as the abnormal control, channels
+containing the p.Arg344Cys subunit showed markedly reduced current density, consistent with a
+loss-of-function effect on the slow delayed rectifier potassium current. Both the wild-type and
+null controls were included in every recording session, and these experiments were performed by
+the study authors.
+
+PHENOTYPE
+All 5 carriers presented with a corrected QT interval (QTc) greater than 480 ms and a clinical
+history of exercise-induced syncope or aborted cardiac arrest, the phenotype classically associated
+with LQT1. Comprehensive cardiac genetic testing (a validated arrhythmia gene panel) excluded
+pathogenic variants in other Long QT syndrome genes in all 5 carriers, supporting that this
+phenotype is highly specific to KCNQ1-related disease in this cohort.
+
+No case-control cohort comparison was performed for this variant. No family members were available
+for segregation testing in any of the 5 families. No RNA-based splicing study was performed. No
+trio testing was performed, so de novo status could not be assessed.
