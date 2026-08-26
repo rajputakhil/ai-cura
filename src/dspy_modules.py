@@ -18,7 +18,7 @@ import os
 from typing import Literal, Optional
 
 import dspy
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 # Same allowed criterion codes / strengths as the original AI-CURA prompts
 # (Ma et al. 2026 Supplementary Methods) -- see llm.py's _LIT_CRITERIA_PROMPT.
@@ -28,12 +28,24 @@ _Strength = Literal["supporting", "moderate", "strong", "very_strong"]
 
 class LitCriterion(BaseModel):
     code: _CriterionCode
-    strength: _Strength = Field(description="Evidence strength for this criterion")
+    strength: _Strength = Field(default="supporting", description="Evidence strength for this criterion")
     met: bool = Field(default=True, description="Whether the criterion applies to this variant")
     evidence: str = Field(
+        default="",
         description="One sentence citing what the paper's AUTHORS explicitly report "
                      "-- never cited work or assumptions"
     )
+
+    @model_validator(mode="before")
+    @classmethod
+    def _coerce_bare_code(cls, data):
+        """Some smaller/local models emit a bare code string (e.g. "PS3")
+        instead of a full object when the schema has several fields. Treat
+        that as shorthand for a minimally-populated criterion instead of
+        raising a validation error."""
+        if isinstance(data, str):
+            return {"code": data, "strength": "supporting", "met": True, "evidence": ""}
+        return data
 
 
 class ExtractLiteratureCriteria(dspy.Signature):
