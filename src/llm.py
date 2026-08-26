@@ -260,6 +260,10 @@ def synthesize(variant_str, acmg_result, clinvar_hits, gnomad_af,
         return f"[LLM failed: {e}]\n\n{_fallback(acmg_result)}"
 
 
+# NOTE: superseded by dspy_modules.ExtractLiteratureCriteria -- kept only as a
+# reference to the original Ma et al. Supplementary Methods prompt text.
+# assess_literature_criteria() / assess_literature_criteria_multi() no longer
+# call this or _parse_lit_criteria() below.
 _LIT_CRITERIA_PROMPT = """You are applying the literature-DEPENDENT ACMG/AMP criteria for
 variant classification. These are the criteria that cannot be scored from databases alone
 and require reading a primary paper.
@@ -326,21 +330,29 @@ def assess_literature_criteria(variant_str, paper_text, backend="ollama",
                                model=None, api_key=None):
     """Read a paper, extract literature-dependent ACMG criteria as structured verdicts.
 
+    DSPy-backed (see dspy_modules.py): the output schema is enforced by the
+    adapter instead of a hand-rolled regex, so malformed model output gets
+    retried against the schema rather than silently dropped.
+
     Returns (criteria_list, raw_llm_output). criteria_list is a list of dicts ready
     to be folded into the ACMG score via acmg.add_literature_criteria().
     """
-    key = api_key or os.getenv("ANTHROPIC_API_KEY", "")
     paper = (paper_text or "").strip()
     if not paper:
         return [], "No paper text provided."
-    prompt = _LIT_CRITERIA_PROMPT.format(variant=variant_str, paper=paper[:12000])
     try:
-        raw = _dispatch(prompt, backend, key, model, max_tokens=800)
+        from .dspy_modules import extract_literature_criteria
+    except ImportError:
+        return [], "DSPy is not installed -- run `pip install dspy` (see requirements.txt)."
+    try:
+        _source, criteria, raw = extract_literature_criteria(
+            variant_str, paper, backend=backend, model=model, api_key=api_key
+        )
     except Exception as e:
         return [], f"[Literature assessment failed: {e}]"
-    if raw is None:
-        return [], "No LLM backend available (set a local model or ANTHROPIC_API_KEY)."
-    return _parse_lit_criteria(raw), raw
+    for c in criteria:
+        c["evidence"] = "[literature/LLM] " + c["evidence"]
+    return criteria, raw
 
 
 # ---------------------------------------------------------------------------
@@ -348,6 +360,9 @@ def assess_literature_criteria(variant_str, paper_text, backend="ollama",
 # aggregate; de-duplicate overlapping patient cohorts per fig. S4)
 # ---------------------------------------------------------------------------
 
+# NOTE: superseded by dspy_modules.ExtractLiteratureCriteria -- kept only as a
+# reference to the original prompt text. Not called by
+# assess_literature_criteria_multi() anymore (see _parse_paper() below, also unused).
 _PAPER_PROMPT = """You are applying the literature-DEPENDENT ACMG/AMP criteria for one variant,
 reading ONE paper at a time.
 
@@ -425,7 +440,15 @@ def assess_literature_criteria_multi(variant_str, papers, backend="ollama",
     Returns (aggregated_criteria, breakdown) where breakdown is a per-paper list of
     {name, source, criteria, dup, dup_of} for display.
     """
-    key = api_key or os.getenv("ANTHROPIC_API_KEY", "")
+    try:
+        from .dspy_modules import extract_literature_criteria
+    except ImportError:
+        return [], [
+            {"name": n, "source": "unknown", "criteria": [], "dup": False,
+             "dup_of": None, "note": "DSPy not installed"}
+            for n, _ in papers
+        ]
+
     breakdown = []
     for name, text in papers:
         text = (text or "").strip()
@@ -433,15 +456,15 @@ def assess_literature_criteria_multi(variant_str, papers, backend="ollama",
             breakdown.append({"name": name, "source": "unknown", "criteria": [],
                               "dup": False, "dup_of": None, "note": "empty file"})
             continue
-        prompt = _PAPER_PROMPT.format(variant=variant_str, paper=text[:12000])
         try:
-            raw = _dispatch(prompt, backend, key, model, max_tokens=800)
+            source, crits, _raw = extract_literature_criteria(
+                variant_str, text, backend=backend, model=model, api_key=api_key
+            )
         except Exception as e:
             breakdown.append({"name": name, "source": "unknown", "criteria": [],
                               "dup": False, "dup_of": None, "note": f"error: {e}"})
             continue
-        source, crits = _parse_paper(raw or "")
-        breakdown.append({"name": name, "source": source, "criteria": crits,
+        breakdown.append({"name": name, "source": source or "unknown", "criteria": crits,
                           "dup": False, "dup_of": None, "note": None})
 
     # De-duplicate overlapping cohorts (fig. S4): same normalized source
