@@ -1,0 +1,131 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "variant": "NM_198056.3:c.5350G>A",
+        "paper_text": "ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.\nAuthor names, institutions, and data below are fictional and must not be cited as real evidence.\nEngineered to test PS4 (case enrichment) IN ISOLATION -- no segregation, functional, or\nphenotype-specificity evidence is provided, so nothing else should be extracted.\n\nTitle: Case-control enrichment of a recurrent SCN5A missense variant in Brugada syndrome\nAuthors: A. Fictional, B. Placeholder (Institute of Demonstration Cardiogenetics)\nRecruitment: 85 unrelated probands with a clinical diagnosis of Brugada syndrome were recruited\nfrom a single arrhythmia referral center between 2016 and 2023. Diagnostic ajmaline challenge\ntesting was performed on all probands. Whole-exome sequencing was performed on all probands.\n\nTarget variant: NM_198056.3:c.5350G>A (p.Val1784Met)\n\nCASE ENRICHMENT\nThe variant was identified in 9 unrelated probands in our Brugada syndrome cohort (9/85). It was\nabsent from 3,212 in-house control exomes from individuals without a personal or family history\nof arrhythmia. Each of the 9 carriers was an independent proband from a distinct family; only the\nproband was counted per family. The enrichment of this variant in cases versus controls was\nstatistically significant (p < 0.001).\n\nNo family members of any carrier were available for follow-up testing, so no segregation analysis\ncould be performed. No functional (electrophysiological) studies of this variant were undertaken\nby this group or reported elsewhere. No RNA-based splicing study was performed for this variant.\nCarriers presented with a range of arrhythmia phenotypes (syncope, documented VT, and asymptomatic\nECG findings on family screening for unrelated reasons); this phenotypic range is not considered\ndistinctive enough to be highly specific to SCN5A-related disease on its own.\n",
+        "reasoning": "The variant NM_198056.3:c.5350G>A is associated with Brugada syndrome, and the authors found a statistically significant enrichment of this variant in cases versus controls.",
+        "source": "Fictional, Institute of Demonstration Cardiogenetics",
+        "criteria": [
+          {
+            "code": "PS4",
+            "strength": "strong",
+            "met": true,
+            "evidence": "The variant was identified in 9 unrelated probands in our Brugada syndrome cohort (9/85) and was absent from 3,212 in-house control exomes from individuals without a personal or family history of arrhythmia. The enrichment of this variant in cases versus controls was statistically significant (p < 0.001)."
+          }
+        ]
+      },
+      {
+        "augmented": true,
+        "variant": "NM_170707.4:c.1130G>A",
+        "paper_text": "ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.\nAuthor names, institutions, and data below are fictional and must not be cited as real evidence.\nEngineered to test PP1 (cosegregation) IN ISOLATION, and specifically to contrast with PM3:\nthis is a DOMINANT condition, no second pathogenic variant is ever mentioned, and no case-control\nor functional data are provided. A correct extractor must return PP1 and must NOT return PM3.\n\nTitle: Cosegregation of an LMNA missense variant with autosomal dominant dilated cardiomyopathy\nin a five-generation family\nAuthors: C. Example, D. Fictional (Northern Demonstration Cardiogenetics Group)\nRecruitment: a single five-generation family with a history of dilated cardiomyopathy (DCM) and\nconduction disease was ascertained through a proband referred for cardiac genetic testing.\n\nTarget variant: NM_170707.4:c.1130G>A (p.Arg377His)\n\nSEGREGATION\nThe variant was tracked by Sanger sequencing across all available family members. It cosegregated\nwith clinically confirmed DCM and/or conduction disease in 8 affected relatives across three\ngenerations, in addition to the proband. Two individuals were obligate carriers based on their\nposition in the pedigree (each has an affected parent and an affected child) and were counted as\ncarrying the variant without direct genetic confirmation. No genetically confirmed carrier over\nage 40 was free of cardiac disease. This is an autosomal dominant pedigree with no consanguinity\nand no history suggestive of recessive inheritance.\n\nNo case-control cohort was assembled for this variant, so no enrichment statistic is reported. No\nfunctional studies of the variant were performed. No RNA-based splicing study was performed. The\nproband's phenotype (DCM with conduction disease) is common to many cardiomyopathy genes and is\nnot considered specific enough to LMNA on its own to support a phenotype-specificity claim.\n",
+        "reasoning": "The paper provides evidence for cosegregation of the variant with disease in a five-generation family, but does not mention a second pathogenic variant in trans.",
+        "source": "Example, C. (Northern Demonstration Cardiogenetics Group)",
+        "criteria": [
+          {
+            "code": "PP1",
+            "strength": "supporting",
+            "met": true,
+            "evidence": "The variant was tracked by Sanger sequencing across all available family members. It cosegregated with clinically confirmed DCM and/or conduction disease in 8 affected relatives across three generations, in addition to the proband."
+          },
+          {
+            "code": "PS3",
+            "strength": "supporting",
+            "met": false,
+            "evidence": ""
+          },
+          {
+            "code": "PM3",
+            "strength": "supporting",
+            "met": false,
+            "evidence": ""
+          },
+          {
+            "code": "PS2_PM6",
+            "strength": "supporting",
+            "met": false,
+            "evidence": ""
+          },
+          {
+            "code": "PP4",
+            "strength": "supporting",
+            "met": false,
+            "evidence": "The proband's phenotype (DCM with conduction disease) is common to many cardiomyopathy genes and is not considered specific enough to LMNA on its own to support a phenotype-specificity claim."
+          },
+          {
+            "code": "PVS1_RNA",
+            "strength": "supporting",
+            "met": false,
+            "evidence": ""
+          }
+        ]
+      },
+      {
+        "augmented": true,
+        "variant": "NM_000277.3:c.1066-11G>A",
+        "paper_text": "ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.\nAuthor names, institutions, and data below are fictional and must not be cited as real evidence.\nEngineered to test a TRUE PM3 case: a recessive gene, with the target variant explicitly\nconfirmed IN TRANS with a SEPARATE, NAMED, well-established pathogenic variant. This is the\npositive counterpart to paper_pp1_only.txt, which must NOT trigger PM3.\n\nTitle: A novel PAH missense variant identified in trans with a known pathogenic variant in an\ninfant with phenylketonuria\nAuthors: E. Placeholder, F. Demonstration (Institute of Fictional Metabolic Genetics)\nRecruitment: a single proband identified through newborn screening for phenylketonuria (PKU), a\nwell-established autosomal recessive metabolic disorder, followed by confirmatory biochemical and\nmolecular testing.\n\nTarget variant: NM_000277.3:c.1066-11G>A\n\nTRANS CONFIGURATION\nMolecular testing identified the target variant on one allele. Parental testing confirmed the\nproband's mother carries the target variant and is otherwise unaffected. The proband's father was\nfound to carry the well-established pathogenic variant NM_000277.3:c.1222C>T (p.Arg408Trp), which\nis one of the most common pathogenic PAH alleles and is absent in the mother. Segregation in the\nfamily therefore confirms the target variant is in trans with (on the opposite chromosome from)\nthe known pathogenic c.1222C>T variant, consistent with the proband's autosomal recessive PKU\nphenotype.\n\nNo case-control cohort was assembled for the target variant, so no enrichment statistic is\navailable. No functional assay of the target variant was performed. No RNA-based splicing study\nwas performed. Segregation data are limited to this single trio and do not constitute the kind of\nmulti-generation affected-relative cosegregation that would support PP1.\n",
+        "reasoning": "The paper describes a recessive gene with the target variant confirmed in trans with a separate, named, well-established pathogenic variant.",
+        "source": "E. Placeholder, F. Demonstration (Institute of Fictional Metabolic Genetics)",
+        "criteria": [
+          {
+            "code": "PM3",
+            "strength": "strong",
+            "met": true,
+            "evidence": "Molecular testing identified the target variant on one allele. Parental testing confirmed the proband's mother carries the target variant and is otherwise unaffected. The proband's father was found to carry the well-established pathogenic variant NM_000277.3:c.1222C>T (p.Arg408Trp), which is one of the most common pathogenic PAH alleles and is absent in the mother."
+          }
+        ]
+      },
+      {
+        "augmented": true,
+        "variant": "NM_021007.3:c.2573G>A",
+        "paper_text": "ILLUSTRATIVE / SYNTHETIC PAPER EXCERPT -- for building a labeled DSPy training set only.\nAuthor names, institutions, and data below are fictional and must not be cited as real evidence.\nEngineered to test PS2_PM6 (de novo occurrence) IN ISOLATION.\n\nTitle: Recurrent de novo SCN2A missense variant in three unrelated children with early-onset\ndevelopmental and epileptic encephalopathy\nAuthors: G. Fictional, H. Example (Center for Demonstration Pediatric Neurogenetics)\nRecruitment: 3 unrelated probands with early-onset developmental and epileptic encephalopathy\nwere recruited via a pediatric neurogenetics clinic between 2019 and 2023. Trio (proband +\nboth biological parents) whole-exome sequencing was performed for all three families.\n\nTarget variant: NM_021007.3:c.2573G>A (p.Arg858Gln)\n\nDE NOVO CONFIRMATION\nThe target variant was identified in all 3 probands. In each family, targeted Sanger sequencing\nconfirmed the variant was absent in both biological parents, and biological parentage was\nconfirmed by informative SNP analysis in all three trios. All three occurrences are therefore\nindependently confirmed de novo events. No parent in any family carried the variant, and none of\nthe parents reported a personal history of seizures or developmental delay.\n\nNo case-control cohort comparison was performed for this variant. No functional (electrophysiology)\nstudies were conducted. No RNA-based splicing study was performed. Phenotypes across the three\nprobands varied in severity and are not considered specific enough on their own, independent of\nthe de novo evidence, to support a phenotype-specificity claim.\n",
+        "reasoning": "The paper focuses on de novo occurrence of the variant NM_021007.3:c.2573G>A in three unrelated children with early-onset developmental and epileptic encephalopathy, and does not provide any additional evidence for other ACMG/AMP criteria.",
+        "source": "Fictional, G. and Example, H.",
+        "criteria": [
+          {
+            "code": "PS2_PM6",
+            "strength": "strong",
+            "met": true,
+            "evidence": "The target variant was identified in all 3 probands, and in each family, targeted Sanger sequencing confirmed the variant was absent in both biological parents, and biological parentage was confirmed by informative SNP analysis in all three trios."
+          }
+        ]
+      }
+    ],
+    "signature": {
+      "instructions": "Apply the literature-DEPENDENT ACMG/AMP criteria to a variant by reading one\nprimary paper. Only use evidence the paper's authors explicitly report FOR THIS\nVARIANT -- never assumptions, deductions, or work the paper merely cites.\n\nCriteria:\n- PS3: functional assay shows a damaging effect (needs wild-type AND null controls)\n- PS4: case enrichment vs. controls (variant significantly more frequent in\n  affected cases than in controls)\n- PM3: ONLY for a recessive gene, where the target variant is found in trans\n  (opposite chromosome copy) with a SEPARATE, independently-identified\n  pathogenic variant in the same gene. The paper must name that second\n  variant specifically. Do NOT apply PM3 just because the variant runs in a\n  family or cosegregates with disease across relatives -- that is PP1, not\n  PM3. If no distinct second pathogenic variant in trans is named, PM3 does\n  not apply, no matter how large or multi-generation the family is.\n- PS2_PM6: confirmed (PS2) or assumed (PM6) de novo occurrence\n- PP1: cosegregation with disease across affected family members (the variant\n  is tracked through relatives who are affected)\n- PP4: phenotype highly specific to this gene / well-characterized workup\n- PVS1_RNA: RNA study confirms a splicing loss-of-function effect\n\nPP1 and PM3 are commonly confused: cosegregation or family-inheritance\nevidence alone is PP1. PM3 requires a second, distinct pathogenic variant\nin trans -- never infer PM3 from segregation data by itself.\n\nIf no literature-dependent criteria apply, return an empty list.",
+      "fields": [
+        {
+          "prefix": "Variant:",
+          "description": "target variant, e.g. NM_007294.4:c.5266dupC"
+        },
+        {
+          "prefix": "Paper Text:",
+          "description": "full text of one primary paper (or excerpt)"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Source:",
+          "description": "first author's surname and recruiting institution/hospital if stated, else 'unknown' -- used to detect overlapping patient cohorts across papers"
+        },
+        {
+          "prefix": "Criteria:",
+          "description": "one entry per criterion that applies; empty list if none do"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "3.3.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}
